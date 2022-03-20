@@ -30,13 +30,13 @@ export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      title="OctoberRain"
+      description="Welcome to OctoberRain's Channel ~"
     >
       {/* <HomepageHeader /> */}
       <main>
         <HomepageHeader />
-        <HomepageFeatures />
+        {/* <HomepageFeatures /> */}
       </main>
     </Layout>
   );

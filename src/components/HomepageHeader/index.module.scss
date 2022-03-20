@@ -1,7 +1,23 @@
-.slogan {
-  position: absolute;
-}
+.wrapper {
+  .slogan {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 3rem;
+    & > div > span {
+      color: #338bff;
+      margin: 0 5px 0 10px;
+    }
+    .subTitle {
+      font-size: 22px;
+      font-weight: 300;
+    }
+  }
 
-.background {
-  height: calc(100% - 60px);
+  .svgBackground {
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 60px);
+    overflow: hidden;
+  }
 }
