@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "十雨札记",
   tagline: "Welcome to OctoberRain's Channel ~",
-  url: "https://your-docusaurus-test-site.com",
+  url: "https://october-rain.vercel.app",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -29,6 +29,9 @@ const config = {
         },
         blog: {
           showReadingTime: true,
+          // readingTime: ({content, frontMatter, defaultReadingTime}) =>
+          //   defaultReadingTime({content, options: {wordsPerMinute: 300}}),
+
           // Please change this to your repo.
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
@@ -50,20 +53,56 @@ const config = {
           src: "img/rain.svg",
         },
         items: [
-          // {
-          //   type: 'doc',
-          //   docId: 'intro',
-          //   position: 'left',
-          //   label: 'Tutorial',
-          // },
-          { to: "/blog", label: "Blog", position: "left" },
-          // {},
-          // {},
+          // 阅读
+          { to: "docs/reading", label: "读书笔记", position: "left" },
+          
+          // 计算机基础
           {
-            href: "https://github.com/october-rain",
-            label: "GitHub",
-            position: "right",
+            label: '计算机基础',
+            position: 'left',
+            items: [
+              { to: 'docs/computer-basics/basics', label: '基础'},
+              { to: "docs/computer-basics/algorithm", label: "算法" },
+            ]
           },
+          
+          // 前端
+          {
+            label: "前端",
+            position: "left",
+            items: [
+              { to: "docs/frontend/javascript", label: "Javascript" },
+              { to: "docs/frontend/react", label: "React" },
+              { to: "docs/frontend/vue", label: "Vue" },
+            ],
+          },
+          
+          // 后端
+          {
+            label: '后端',
+            position: 'left',
+            items: [
+              { to: "docs/backend/java", label: 'Java'}
+            ]
+          },
+          
+          // BLOG
+          { to: "/blog", label: "BLOG", position: "right" },
+          
+          // ABOUT 
+          {
+            type: "doc",
+            docId: "about/index",
+            position: "right",
+            label: "ABOUT",
+          },
+
+          // github link
+          // {
+          //   href: "https://github.com/october-rain",
+          //   label: "GitHub",
+          //   position: "right",
+          // },
         ],
       },
       footer: {
@@ -73,9 +112,13 @@ const config = {
             title: "博客",
             items: [
               {
-                label: "Tutorial",
-                to: "/docs/intro",
+                label: "OctoberRain Intro",
+                to: "/docs/about",
               },
+              {
+                label: "BLOG",
+                to: "/blog"
+              }
             ],
           },
           {
