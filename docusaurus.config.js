@@ -62,7 +62,7 @@ const config = {
             position: 'left',
             items: [
               { to: 'docs/computer-basics/basics', label: '基础'},
-              { to: "docs/computer-basics/algorithm", label: "算法" },
+              { to: "docs/computer-basics/algorithm/intro", label: "算法" },
             ]
           },
           
