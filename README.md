@@ -39,3 +39,24 @@ $ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+
+# 写作格式
+
+### 文章meta信息
+
+```yml
+---
+id: dp
+title: 动态规划全优化理解
+hide_title: false
+hide_table_of_contents: false
+sidebar_label: Markdown :)
+custom_edit_url: https://github.com/facebook/docusaurus/edit/master/docs/api-doc-markdown.md
+description: 动态规划全优化理解
+keywords:
+  - JavaScript
+  - frontend
+image: https://i.imgur.com/mErPwqL.png
+---
+```
