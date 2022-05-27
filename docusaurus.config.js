@@ -63,6 +63,8 @@ const config = {
             items: [
               { to: 'docs/computer-basics/basics', label: '基础'},
               { to: "docs/computer-basics/algorithm/intro", label: "算法" },
+              { to: "docs/computer-basics/dev-efficiency/intro", label: "开发效率" },
+              { to: "docs/computer-basics/server/intro", label: "服务器相关" },
             ]
           },
           
