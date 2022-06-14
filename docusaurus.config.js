@@ -76,6 +76,7 @@ const config = {
               { to: "docs/frontend/javascript", label: "Javascript" },
               { to: "docs/frontend/react", label: "React" },
               { to: "docs/frontend/vue", label: "Vue" },
+              { to: "docs/frontend/deploy/simple-serve", label: "Deploy" },
             ],
           },
           
