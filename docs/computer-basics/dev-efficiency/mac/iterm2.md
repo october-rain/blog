@@ -15,6 +15,18 @@ title: 使用 iterm2 + zsh 打造 mac 下最佳终端
 
 [参考知乎此文](https://zhuanlan.zhihu.com/p/265525597)
 
+install-alinode
+
+`control + a` 跳到行头
+
+`control + e` 跳到行尾
+
+`control + w` 删除前一个单词
+
+`control + u` 删除当前行
+
+`control + l` 清屏
+
 ## ls 的 替代品
 
 `lsd` `exa`, 我这次选择的是 `lsd`。
